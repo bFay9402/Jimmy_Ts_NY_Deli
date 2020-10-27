@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Jimmy T's New York Deli</title>
 </head>
 <body>
   <!-- nav bar -->
     <nav>
-      <h1 class="logo">Jimmy T's New York Deli</h1>
+      <h1 class="logo"><a href="#"><span class="logo-font">Jimmy T's</span> New York Deli</a></h1>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Breakfast Menu</a></li>
-        <li><a href="#">Lunch Menu</a></li>
+        <li><a href="#breakfast-menu">Breakfast Menu</a></li>
+        <li><a href="#lunch-menu">Lunch Menu</a></li>
         <li><a href="#">Location</a></li>
       </ul>
     </nav> <!-- end nav-->
@@ -25,7 +27,7 @@
     </div> <!-- end about-->
   
     <div class="menu">
-      <div class="menu-heading">Breakfast Menu</div>
+      <div id="breakfast-menu" class="menu-heading">Breakfast Menu</div>
       <div class="menu-description">7 AM - 11 AM</div>
       <div class="menu-section">
         <div class="menu-section-title">N.Y. Style Egg Sandwiches</div>
@@ -38,8 +40,8 @@
             <div class="item">Egg On a Roll or English Muffin with Ham, Bacon, or Sausage Patty</div>
             <span class="price">$2.25</span>
           </div>
-          <span class="extra">with cheese .40 cents extra</span>
         </div> <!--end menu items-->
+        <span class="extra">with cheese .40 cents extra</span>
       </div> <!--end menu section-->
       <div class="menu-section">
         <div class="menu-section-title">Breakfast Specials</div>
@@ -68,8 +70,8 @@
             <div class="item">2 Biscuits & Gravy</div>
             <span class="price">$4.75</span>
           </div>
-          <span class="extra">white, whole wheat, rye toast or english muffin egg beaters .50 cents extra</span>
         </div> <!--end menu items-->
+        <span class="extra">white, whole wheat, rye toast or english muffin egg beaters .50 cents extra</span>
       </div> <!--end menu section-->
       <div class="menu-section">
         <div class="menu-section-title">Omelettes</div>
@@ -256,7 +258,7 @@
           </div>
         </div> <!--end menu items-->
       </div> <!--end menu section-->
-      <div class="menu-heading">Lunch Menu</div>
+      <div id="lunch-menu" class="menu-heading">Lunch Menu</div>
       <div class="menu-section">
         <div class="menu-section-title">Cold Subs</div>
         <div class="menu-items">
@@ -328,9 +330,9 @@
             <div class="item">Provolone or Swiss Cheese</div>
             <span class="price">1/2: $4.50 Full: $6.75</span>
           </div>
-          <span class="extra">White, Rye and Wholewheat Bread same as 1/2 sub</span>
-          <span class="extra">.50 cents extra for cheese except on Combos</span>
         </div> <!--end menu items-->
+        <span class="extra">White, Rye and Wholewheat Bread same as 1/2 sub</span>
+        <span class="extra">.50 cents extra for cheese except on Combos</span>
       </div> <!--end menu section-->
       <div class="menu-section">
         <div class="menu-section-title">Grilled Specials</div>
@@ -383,8 +385,8 @@
             <div class="item">Turkey Club Sandwich</div>
             <span class="price">$8.45</span>
           </div>
-          <span class="extra">*Includes Fries</span>
         </div> <!--end menu items-->
+        <span class="extra">*Includes Fries</span>
       </div> <!--end menu section-->
       <div class="menu-section">
         <div class="menu-section-title">Hot Subs</div>
