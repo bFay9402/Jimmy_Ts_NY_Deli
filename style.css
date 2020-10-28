@@ -8,7 +8,7 @@
 /* base styles */
 
 body {
-  background: lightgreen;
+  background: #c6f68d;
   font-family: Raleway, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 /* navbar */
 
 nav {
-  background: darkgreen;
+  background: #008b00;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,6 +28,7 @@ nav {
   position: sticky;
   top: 0;
   margin-bottom: 1.7rem;
+  opacity: 0.98;
 }
 
 .logo-font {
@@ -51,6 +52,14 @@ nav ul li a {
   color: white;
 }
 
+/* banner */
+  .banner {
+    overflow: hidden;
+  }
+
+  .banner img {
+    max-width: 100%;
+  }
 /* about */
 
 /* menu */
@@ -59,7 +68,7 @@ nav ul li a {
   /* border: 1px yellow solid; */
   max-width: 75%;
   margin: 0 auto;
-  background: rgb(199, 248, 199);
+  background: #f2fde4;
 }
 
 .menu-heading {
@@ -74,7 +83,7 @@ nav ul li a {
 }
 
 .menu-section-title {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   text-decoration: underline;
 }
@@ -116,3 +125,99 @@ nav ul li a {
 /* location */
 
 /* footer */
+
+footer {
+  background: #008b00;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 980px) {
+  .menu {
+    max-width: 100%;
+  }
+
+  .menu-items {
+    /* border: 1px red solid; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: .75rem;
+  }
+
+  nav ul li {
+    margin-bottom: .5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .menu {
+    max-width: 100%;
+  }
+
+  .menu-items {
+    /* border: 1px red solid; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav {
+    flex-direction: column;
+    position: static;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: .75rem;
+  }
+
+  nav ul li {
+    margin-bottom: .5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .menu {
+    max-width: 100%;
+  }
+
+  .menu-items {
+    /* border: 1px red solid; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav {
+    flex-direction: column;
+    position: static;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: .75rem;
+  }
+
+  nav ul li {
+    margin-bottom: .5rem;
+  }
+  
+}
